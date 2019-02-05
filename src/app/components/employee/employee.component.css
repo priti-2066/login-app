@@ -1,0 +1,13 @@
+.indent {
+    margin-left:5px;
+}
+.card-image {
+    height:50px;width:50px;margin-top:10px;
+}
+.grid-container div {
+    padding-left: 0px;
+}
+ 
+.grid-container td {
+    vertical-align: middle;
+}

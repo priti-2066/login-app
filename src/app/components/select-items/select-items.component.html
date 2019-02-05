@@ -1,0 +1,4 @@
+  <select [ngStyle]="{'background-color': color}" (change)='ListItemChanged($event)'>
+    <option *ngFor='let employee of employees'  [ngValue]='employee.id'>{{employee}}</option>
+  </select>
+

@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row grid-container">
+      <div class="col-md-10">
+          <div class="table">
+              <table class="table table-striped table-hover">
+                  <thead>
+                      <tr>
+                        <th>&nbsp;</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Address</th>
+                        <th>DOB</th>
+                        <th>Password Setup</th>
+                        
+                      </tr>
+                  </thead>
+                  
+                    <tbody>
+                      <tr *ngFor="let employee of employees">
+                          <td>
+                              <img src="assets/images/{{ employee.gender }}.png"
+                                   class="card-image" alt="pic" />
+                          </td>
+                          <td>{{ employee.name }}</td>
+                          <td>{{ employee.role }}</td>
+                          <td>{{ employee.address }}</td>
+                          <td>{{ employee.dob }}</td>
+                          
+                          <td>{{ employee.pwdsetup }}</td>
+                          
+                      </tr>
+                      
+                  </tbody>
+                  
+              </table>
+          </div>
+
+      </div>
+  </div>
+</div>

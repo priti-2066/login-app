@@ -1,0 +1,34 @@
+<div class="container">
+        <div class="row grid-container">
+            <div class="col-md-10">
+                <div class="table">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                              <th>&nbsp;</th>
+                              <th>Name</th>
+                                                            
+                            </tr>
+                        </thead>
+                        
+                          <tbody>
+                            <tr *ngFor="let employee of employees">
+                               
+                                <td>{{ employee.name }}</td>
+                               
+                               
+                                <td><button class="btn btn-primary" (click)="editEmployee()">Edit</button></td>
+                            </tr>
+                            
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <app-select-items [employees]='employeeList' (selectedItem)='selectedEmployee= $event' color='#fff000'></app-select-items>
+                <button (click)='employeeDetail($event)'>Selected Employee: {{selectedEmployee}}</button>
+                    
+            </div>
+        </div>
+      </div>
+     
+      

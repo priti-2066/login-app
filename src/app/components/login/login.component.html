@@ -1,0 +1,12 @@
+<div class="col-md-12">
+    <h3>Login Page</h3>
+   admin UN = demo admin PWD = demo,<br/> Employee UN = emp Employee PWD = emp
+    <form submit="authCheck()" class="form">
+      <div class="col-md-4">
+          <input type="text" class="form-control" [(ngModel)]='username' placeholder="username"  [ngModelOptions]="{standalone: true}"/>
+          <input type="password" class="form-control" [(ngModel)]='password' placeholder="password"  [ngModelOptions]="{standalone: true}"/>
+         <button type="submit" class="btn btn-success" (click)='authCheck()'>Login</button>
+       </div>
+    </form>
+  </div>
+  <router-outlet></router-outlet>
